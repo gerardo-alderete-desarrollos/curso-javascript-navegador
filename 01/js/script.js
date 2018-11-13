@@ -1,15 +1,24 @@
-// console.log(document.getElementById('title'))
+//const items = document.querySelector('ul')
 
-const title = document.getElementById('title')
-const title2 = document.querySelector('#title')
-const listItems = document.querySelectorAll('ul li')
-const secondItem = document.querySelectorAll('ul li:nth-child(2)')
-const list = document.getElementById('list')
+//const elememtList = document.getElementsByTagName('li')
+//console.log(elememtList)
 
-title.style.background = 'yellow'
 
-console.log(title)
-console.log(title2)
-console.log(listItems)
-console.log(secondItem)
-console.log(list.querySelectorAll('li:last-child'))
+//const nodeList = [...document.querySelectorAll('li')]
+// const nodeList = Array.from(document.querySelectorAll('li'))
+const nodeList = document.querySelectorAll('li')
+
+//nodeList.map   ( el => el.style.background = 'yellow' )
+
+/* nodeList.map   ( el => {
+    if(el.textContent.trim().toUpperCase() === 'OBJECT'){
+        el.remove()
+    }
+} ) */
+
+for( let el of nodeList){
+    if(el.textContent.trim().toUpperCase() === 'OBJECT'){
+        el.remove()
+    }
+}
+
