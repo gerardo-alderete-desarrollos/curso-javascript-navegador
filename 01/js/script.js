@@ -1,24 +1,30 @@
-//const items = document.querySelector('ul')
+/* const title = document.getElementById('title')
+const title2 = document.getElementById('title2')
 
-//const elememtList = document.getElementsByTagName('li')
-//console.log(elememtList)
+console.log(title.getAttribute('class'))
+console.log(title.getAttribute('id'))
+console.log(title.getAttribute('value'))
 
-
-//const nodeList = [...document.querySelectorAll('li')]
-// const nodeList = Array.from(document.querySelectorAll('li'))
-const nodeList = document.querySelectorAll('li')
-
-//nodeList.map   ( el => el.style.background = 'yellow' )
-
-/* nodeList.map   ( el => {
-    if(el.textContent.trim().toUpperCase() === 'OBJECT'){
-        el.remove()
-    }
-} ) */
-
-for( let el of nodeList){
-    if(el.textContent.trim().toUpperCase() === 'OBJECT'){
-        el.remove()
-    }
+if( title2 ){
+    title2.style.background = 'yellow'
 }
+console.log('Hola mundo')
+
+ */
+
+//  const title = document.querySelector('h1')
+
+//  title.setAttribute('id','title')
+//  console.log(title)
+
+// title.id = 'title'
+// console.log(title)
+
+const title = document.querySelector('h1')
+// console.log(title.classList)
+title.classList.add('main-title', 'title-front-page')
+title.classList.remove('title-front-page')
+
+
+
 
