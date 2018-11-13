@@ -1,12 +1,14 @@
 const title = document.querySelector('h1')
 
-/* console.log(title.textContent)
-console.log(title.innerHTML)
-console.log(title.outerHTML) */
+const profesor = document.createElement('p')
+const profesorContainer = document.getElementById('teacher')
 
+profesor.textContent = 'Alexys Lozada'
+profesor.classList.add('teacher')
 
-// title.textContent = `Hola mama, <em> estoy en clase </em>`
-title.innerHTML = `Hola mama, <em> estoy en clase </em>`
+if(profesorContainer && profesorContainer.querySelector('span')){
+    profesorContainer.querySelector('span').appendChild(profesor)
+}
 
 
 
