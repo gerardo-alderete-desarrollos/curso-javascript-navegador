@@ -1,14 +1,13 @@
 const title = document.getElementById('title')
 
-// title.addEventListener('eventName', eventHandler)
+const createMenu = () => {
+    const menu = document.createElement('div')
+    menu.textContent = 'Soy un menu contextual'
+    document.body.appendChild(menu)
+}
 
-const holaMundo = (e) => alert(e.target.textContent)
-
-
-title.addEventListener('click', (e) => {
-    holaMundo(e)
+title.addEventListener('contextmenu', (e) => {
+    createMenu()
+    e.preventDefault()
 })
 
-document.querySelector('button').addEventListener('click', (e) => {
-    holaMundo(e)
-})
