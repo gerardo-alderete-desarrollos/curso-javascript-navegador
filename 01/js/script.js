@@ -1,29 +1,24 @@
-// const parent = document.getElementById('parent'),
-//       childs = Array.from(parent.children),
-//       childParent = childs.filter( child => child.children.length > 0)[0],
-//       grandSons = Array.from(childParent.children),
-//       grandSon3 = grandSons.filter( child => child.textContent.trim()
-//         === 'Nieto 3')[0]
 
-// const newElement = document.createElement('h2')
-// newElement.textContent = 'Soy un nuevo elemento'
-
-// childParent.insertBefore(newElement,grandSon3)
-
-const post = document.getElementById('post')
+const parent = document.getElementById('parent')
 const ad = document.createElement('div')
 ad.id = 'edteam'
 ad.textContent = 'Publicidad'
 
-const postParagraphs = post.querySelectorAll('p')
+// parent.insertAdjacentElement('beforebegin', ad)
+// parent.insertAdjacentElement('afterend', ad)
+// parent.insertAdjacentElement('afterbegin', ad)
+parent.insertAdjacentElement('beforeend', ad)
 
-const getMiddleChild = element => {
-    const childs = element.children,
-          l = childs.length,
-          i = Math.floor(l / 2)
+// parent.insertAdjacentText('beforeend', 'Hola mundo')
+// parent.insertAdjacentText('beforebegin', 'Hola mundo')
 
-    return childs[i]
-}
- 
-const middleChild = getMiddleChild(post)
-post.insertBefore(ad, middleChild)
+
+// parent.insertAdjacentHTML('beforebegin', `<h1>Soy el titulo
+    // principal</h1>`)
+
+
+
+
+
+
+

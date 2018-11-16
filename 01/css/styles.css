@@ -1,6 +1,6 @@
-#edteam {
-    background: yellow;
-    height: 100px;
+div {
+    border: 1px solid red;
+    padding: 1em;
     text-align: center;
-    margin: 1em 0;
+    margin: .5em;
 }
