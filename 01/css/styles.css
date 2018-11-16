@@ -1,23 +1,12 @@
-/* body {
-     background: #fafafa;
+form {
+    padding: 1em;
 }
 
 input {
-    font-size: 2em;
-    padding: .25em;
-} */
-
-body {
-    margin: 0;
-    display: flex;
-    min-height: 100vh;
+    display: block;
+    margin-bottom: 1em;
 }
 
-.ball {
-    --size: 60px;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    background-color: red;
-    margin: auto;
+[type="checkbox"] {
+    display: inline-block;
 }
