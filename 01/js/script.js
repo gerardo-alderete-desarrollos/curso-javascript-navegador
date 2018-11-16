@@ -1,7 +1,21 @@
-const template = document.getElementById('template')
-const myNewTemplate = template.content.cloneNode(true)
+const title = document.querySelector('h1')
+const description = document.querySelector('p')
+// const mediumBp = matchMedia('(min-width: 640px) and (orientation:portrait)')
 
-myNewTemplate.querySelector('h2').textContent = 'EDteam'
-myNewTemplate.querySelector('p').textContent = 'Tu futuro te esta esperando'
+// // title.style.color = 'red'
 
-document.getElementById('content').appendChild(myNewTemplate)
+// const changeColor = () => {
+//     if(mediumBp.matches){
+//         document.body.style.background = 'red'
+//     }else {
+//         document.body.style.background = 'yellow'
+
+//     }
+// }
+
+// addEventListener('resize', changeColor)
+// addEventListener('DOMContentLoaded', changeColor)
+
+// console.log(getComputedStyle(title).fontSize)
+
+
