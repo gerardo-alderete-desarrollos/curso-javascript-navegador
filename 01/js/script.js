@@ -1,17 +1,26 @@
-const form = document.getElementById('responsive-tester-form')
+// setTimeout(() => {
+//     alert('Hola mundo')
+// }, 2000);
+// let contador = 0
+// const saludarMuchasVeces = setInterval(() => {
+//     contador++
+    
+//     if(contador >1){
+//         console.log(`Hola ${contador} veces`)
+//     }else{
+//         console.log(`Hola ${contador} veces`)
 
-if(form){
-    form.addEventListener('submit', () => {
-        let width = form.querySelector('#width'),
-            height = form.querySelector('#height'),
-            url = form.querySelector('#url')
+//     }
+//     if(contador === 20){
+//         clearInterval(saludarMuchasVeces)
+//     }
+// }, 1000)
 
-        if( width && height && url){
-            width = width.value
-            height = height.value
-            url = url.value
-        }
+console.log(new Date().toLocaleTimeString())
 
-        window.open(url, url, `innerWidth=${width}, innerHeight=${height}`)
-    })
-}
+setInterval(() => {
+    const clock = document.getElementById('clock')
+    if(clock){
+        clock.textContent = new Date().toLocaleTimeString()
+    }
+}, 1000);
