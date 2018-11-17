@@ -1,26 +1,21 @@
-// setTimeout(() => {
-//     alert('Hola mundo')
-// }, 2000);
-// let contador = 0
-// const saludarMuchasVeces = setInterval(() => {
-//     contador++
-    
-//     if(contador >1){
-//         console.log(`Hola ${contador} veces`)
-//     }else{
-//         console.log(`Hola ${contador} veces`)
 
-//     }
-//     if(contador === 20){
-//         clearInterval(saludarMuchasVeces)
-//     }
-// }, 1000)
+// const aniversario = new Date(2000,4,21,20,30,12)
+// const neweAniversario = new Date('May 21 2000 20:30:12 GMT-0500')
 
-console.log(new Date().toLocaleTimeString())
 
-setInterval(() => {
-    const clock = document.getElementById('clock')
-    if(clock){
-        clock.textContent = new Date().toLocaleTimeString()
-    }
-}, 1000);
+// console.log(aniversario)
+// console.log(neweAniversario)
+
+// const timeZoneOffset = new Date().getTimezoneOffset()
+// console.log(timeZoneOffset)
+
+
+const birthday = new Date(1992,07,29)
+const now = new Date(2018,11,16)
+
+
+
+const getseconds = ms => Math.round(ms / 1000)
+const getminuts = ms => Math.round(ms) / 60
+
+console.log(getseconds( now -birthday))
