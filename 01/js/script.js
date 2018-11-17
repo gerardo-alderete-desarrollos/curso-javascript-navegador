@@ -1,13 +1,17 @@
-// let userResponse = confirm('Estas seguro')
+const form = document.getElementById('responsive-tester-form')
 
-// if(userResponse){
-//     alert('el usuario esta seguro')
-// }else{
-//     alert('el usuario no esta seguro')
-// }
+if(form){
+    form.addEventListener('submit', () => {
+        let width = form.querySelector('#width'),
+            height = form.querySelector('#height'),
+            url = form.querySelector('#url')
 
-// let userAge = prompt('Cual es tu edad')
+        if( width && height && url){
+            width = width.value
+            height = height.value
+            url = url.value
+        }
 
-// alert(`La edad del usuario es ${userAge}`)
-
-window.open('http://ed.team', 'EDteam', 'width=200, height=400')
+        window.open(url, url, `innerWidth=${width}, innerHeight=${height}`)
+    })
+}
